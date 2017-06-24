@@ -1,0 +1,7 @@
+export class Item {
+    id: string;
+    name: string;
+    description: string;
+    colors: number;
+    photos: string[];
+}
