@@ -1,1 +1,10 @@
-<Label text="hola"></Label>
+<ScrollView>
+    <WrapLayout orientation="horizontal">
+            <StackLayout *ngFor="let item of items; let i = index">
+                <StackLayout orientation="vertical">
+                    <Image [src]="item.photos[0]" horizontalAlignment="center" stretch="aspectFill"></Image>
+                    <Label [text]="item.name + ' (' + item.colors + ')'"></Label>
+                </StackLayout>
+            </StackLayout>
+    </WrapLayout>
+</ScrollView>

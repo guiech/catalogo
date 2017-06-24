@@ -1,0 +1,11 @@
+Image {
+    height: 500px;
+    background-size: cover;
+    width: 50%;
+}
+Label {
+    width: 50%;
+    color: red;
+    background-color: yellow;
+    margin-bottom: 50px;
+}

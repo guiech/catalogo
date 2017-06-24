@@ -7,10 +7,59 @@ export class ItemService {
     private items = new Array<Item>(
         {
             id: "zapato0001",
-            name: "Ter Stegen",
-            description: "Goalkeeper",
+            name: "Taco Alto Uno",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
-            photos: new Array("res://","res://")
+            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+        },
+        {
+            id: "zapato0002",
+            name: "Bota Dos",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
+        },
+        {
+            id: "zapato0001",
+            name: "Taco Alto Uno",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+        },
+        {
+            id: "zapato0002",
+            name: "Bota Dos",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
+        },
+        {
+            id: "zapato0001",
+            name: "Taco Alto Uno",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+        },
+        {
+            id: "zapato0002",
+            name: "Bota Dos",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
+        },
+        {
+            id: "zapato0001",
+            name: "Taco Alto Uno",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+        },
+        {
+            id: "zapato0002",
+            name: "Bota Dos",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
+            colors: 2,
+            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
         }
     );
 
