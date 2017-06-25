@@ -20,43 +20,43 @@ export class ItemService {
             photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
         },
         {
-            id: "zapato0001",
-            name: "Taco Alto Uno",
+            id: "zapato0003",
+            name: "Zapato Tres",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
         },
         {
-            id: "zapato0002",
-            name: "Bota Dos",
+            id: "zapato0004",
+            name: "Zandalia Cuatro",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
         },
         {
-            id: "zapato0001",
-            name: "Taco Alto Uno",
+            id: "zapato0005",
+            name: "Zapatilla Cinco",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
         },
         {
-            id: "zapato0002",
-            name: "Bota Dos",
+            id: "zapato0006",
+            name: "Chatitas Seis",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
         },
         {
-            id: "zapato0001",
-            name: "Taco Alto Uno",
+            id: "zapato0007",
+            name: "Suecos Siete",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
         },
         {
-            id: "zapato0002",
-            name: "Bota Dos",
+            id: "zapato0008",
+            name: "Ojotas Ocho",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
             colors: 2,
             photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
