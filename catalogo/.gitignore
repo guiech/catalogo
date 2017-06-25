@@ -1,3 +1,6 @@
+npm-debug.log
+.DS_Store
+
 app/**/*.js
 hooks/
 lib/
