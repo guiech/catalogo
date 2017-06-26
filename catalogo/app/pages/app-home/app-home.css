@@ -1,0 +1,17 @@
+
+StackLayout {
+  background-color: black;
+}
+
+Image {
+  padding-bottom : 10;
+  margin-top : 40;
+  width: 50%;
+  height: 50%;
+}
+
+Button {
+  color: black;
+  background-color: white;
+  width: 53%;
+}

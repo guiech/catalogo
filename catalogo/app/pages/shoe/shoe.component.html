@@ -1,0 +1,7 @@
+<StackLayout>
+    <Label [text]="shoe.name"></Label>
+    <Image class="main-photo" [src]="shoe.photos[0]"></Image>
+        <StackLayout orientation="horizontal">
+                <Image class="secondary-photo" *ngFor="let photo of shoe.photos" [src]="photo"></Image>
+        </StackLayout>
+</StackLayout>

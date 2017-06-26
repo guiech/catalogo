@@ -1,0 +1,16 @@
+Label {
+    text-align: center;
+    font-size: 30;
+    color: blue;
+    margin-top: 20;
+}
+
+.main-photo{
+    width: 60%;
+    height: 60%;
+}
+
+.secondary-photo{
+    width: 33%;
+    height: 33%;
+}

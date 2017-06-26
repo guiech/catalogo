@@ -1,23 +1,24 @@
 import * as scrollViewModule from "tns-core-modules/ui/scroll-view";
 import { Component, OnInit } from "@angular/core";
 
-import { Item } from "../../shared/item/item";
-import { ItemService } from "../../shared/item/item.service";
+import { Shoe } from "../../shared/shoes/shoe";
+import { Line } from "../../shared/line/line";
+import { ShoeService } from "../../shared/shoes/shoes.service";
 
 @Component({
     selector: "cg-list-page",
-    providers: [ItemService],
+    providers: [ShoeService],
     moduleId: module.id,
     templateUrl: "./list.component.html",
     styleUrls: ["./list.css", "./list-common.css"]
 })
 export class ListComponent implements OnInit {
-    items: Item[];
 
-    constructor(private itemService: ItemService) { }
+    lines : Line[];
+
+    constructor(private shoeService: ShoeService) { }
 
     ngOnInit(): void {
-        this.items = this.itemService.getItems();
-        console.log(this.items[0].photos[0]);
+        this.lines = this.shoeService.buildLines();
     }
 }

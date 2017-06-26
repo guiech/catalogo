@@ -3,12 +3,15 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
 import { ListComponent } from "./pages/list/list.component";
-import { ItemComponent } from "./pages/item/item.component";
+import { ShoeComponent } from "./pages/shoe/shoe.component";
+import { AppHomeComponent } from "./pages/app-home/app-home.component";
+
 
 const routes: Routes = [
-    { path: "", redirectTo: "/list", pathMatch: "full" },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: AppHomeComponent },
     { path: "list", component: ListComponent },
-    { path: "item/:id", component: ItemComponent },
+    { path: "shoe/:id", component: ShoeComponent },
 ];
 
 @NgModule({

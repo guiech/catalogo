@@ -3,10 +3,11 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
-import { ItemService } from "./shared/item/item.service";
+import { ShoeService } from "./shared/shoes/shoes.service";
 
 import { ListComponent } from "./pages/list/list.component";
-import { ItemComponent } from "./pages/item/item.component";
+import { ShoeComponent } from "./pages/shoe/shoe.component";
+import { AppHomeComponent } from "./pages/app-home/app-home.component";
 
 @NgModule({
     bootstrap: [
@@ -19,10 +20,12 @@ import { ItemComponent } from "./pages/item/item.component";
     declarations: [
         AppComponent,
         ListComponent,
-        ItemComponent
+        ShoeComponent,
+        AppHomeComponent
+
     ],
     providers: [
-        ItemService
+        ShoeService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

@@ -1,21 +1,35 @@
 Image {
-    height: 500px;
-    width: 48%;
+    height: 50%;
+    width: 45%;
 }
-Label {
-    width: 48%;
+
+.label2 {
+    width: 45%;
     color: black;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    font-size: 16;
 }
-.item.par {
-    margin-left: 2%;
+
+.shoe.par {
+    margin-left: 5%;
     margin-right: 1%;
 }
-.item.impar {
-    margin-left: 1%;
+
+.shoe.impar {
+    margin-left: 2%;
     margin-right: 2%;
 }
+
 WrapLayout {
+    background-color: #f4f4f4;
+}
+
+Label{
+    width: 100%;
+    font-size: 30;
+    text-align: center;
+    padding-top: 20;
+    padding-bottom: 20;
     background-color: #f4f4f4;
 }

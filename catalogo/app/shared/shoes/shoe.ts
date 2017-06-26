@@ -1,4 +1,4 @@
-export class Item {
+export class Shoe {
     id: string;
     name: string;
     description: string;
