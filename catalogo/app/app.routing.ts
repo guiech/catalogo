@@ -8,7 +8,7 @@ import { AppHomeComponent } from "./pages/app-home/app-home.component";
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/list", pathMatch: "full" },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: AppHomeComponent },
     { path: "list", component: ListComponent },
     { path: "shoe/:id", component: ShoeComponent },
