@@ -10,63 +10,64 @@ export class ShoeService {
 
     private shoes = new Array<Shoe>(
         {
-            id: "zapato0001",
-            name: "Este sabe",
+            id: "1225-01",
+            name: "1225-01",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg","~/images/zapato0002-c2.jpg")
+            colors: 3,
+            photos: [
+                {file:"~/images/joaquina-1225-01-negro.JPG", name:"Negro"},
+                {file:"~/images/joaquina-1225-01-rosa.JPG", name:"Rosa"},
+                {file:"~/images/joaquina-1225-01-suela.JPG", name:"Suela"}
+            ],
+            line: "Joaquina"
         },
         {
-            id: "zapato0002",
-            name: "Bota Dos",
+            id: "1225-02",
+            name: "1225-02",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
+            colors: 3,
+            photos: [
+                {file:"~/images/joaquina-1225-02-negro.JPG", name:"Negro"},
+                {file:"~/images/joaquina-1225-02-rosa.JPG", name:"Rosa"},
+                {file:"~/images/joaquina-1225-02-suela.JPG", name:"Suela"}
+            ],
+            line: "Joaquina"
         },
         {
-            id: "zapato0003",
-            name: "Zapato Tres",
+            id: "430-01",
+            name: "430-01",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+            colors: 3,
+            photos: [
+                {file:"~/images/emma-430-01-oro.JPG", name:"Oro"},
+                {file:"~/images/emma-430-01-negro.JPG", name:"Negro"},
+                {file:"~/images/emma-430-01-celeste.JPG", name:"Celeste"}
+            ],
+            line: "Emma"
         },
         {
-            id: "zapato0004",
-            name: "Zandalia Cuatro",
+            id: "430-02",
+            name: "430-02",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
-        }
-    );
-
-    private shoes2 = new Array<Shoe>(
-        {
-            id: "zapato0001",
-            name: "Este sabe",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
+            colors: 3,
+            photos: [
+                {file:"~/images/emma-430-02-oro.JPG", name:"Oro"},
+                {file:"~/images/emma-430-02-negro.JPG", name:"Negro"},
+                {file:"~/images/emma-430-02-suela.JPG", name:"Suela"}
+            ],
+            line: "Emma"
         },
         {
-            id: "zapato0002",
-            name: "Bota Dos",
+            id: "430-03",
+            name: "430-03",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
-        },
-        {
-            id: "zapato0003",
-            name: "Zapato Tres",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0001-c1.jpg","~/images/zapato0002-c2.jpg")
-        },
-        {
-            id: "zapato0004",
-            name: "Zandalia Cuatro",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo sapien, volutpat in aliquam ac, placerat vel libero",
-            colors: 2,
-            photos: new Array("~/images/zapato0002-c2.jpg","~/images/zapato0001-c1.jpg")
+            colors: 3,
+            photos: [
+                {file:"~/images/emma-430-03-blanco.JPG", name:"Blanco"},
+                {file:"~/images/emma-430-03-negro.JPG", name:"Negro"},
+                {file:"~/images/emma-430-03-vison.JPG", name:"Vison"}
+            ],
+            line: "Emma"
         }
     );
     
@@ -78,11 +79,15 @@ export class ShoeService {
         return this.shoes.filter(shoe => shoe.id === id)[0];
     }
 
+    getShoesByLine(line: string): Shoe[] {
+        return this.shoes.filter(shoe => shoe.line === line);
+    }
+
     buildLines(){
-        var line : Line = new Line(this.shoes, "Titulo 1");
-        this.lines.push(line);
-        var line2 : Line = new Line(this.shoes2, "Titulo 2");
-        this.lines.push(line2);
+        var joaquina : Line = new Line(this.getShoesByLine("Joaquina"), "Linea Joaquina");
+        this.lines.push(joaquina);
+        var emma : Line = new Line(this.getShoesByLine("Emma"), "Linea Emma");
+        this.lines.push(emma);
         return this.lines;
     }
 

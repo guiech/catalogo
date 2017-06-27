@@ -1,12 +1,19 @@
 <ActionBar title="Karen Klier"></ActionBar>
 <StackLayout>
-    <Label [text]="shoe.name"></Label>
-    <Image class="main-photo" [src]="currentPhoto"></Image>
-        <StackLayout orientation="horizontal">
-                <Image 
-                        *ngFor="let photo of shoe.photos"
-                        [src]="photo"
-                        (tap)="show(photo)"
-                        [ngClass]="{'thumb-4':shoe.photos.length == 4, 'thumb-3':shoe.photos.length < 4}"></Image>
-        </StackLayout>
+        <Label class="title" [text]="shoe.line + ' ' + shoe.name"></Label>
+        <Image class="main-photo" [src]="currentPhoto"></Image>
+        <WrapLayout>
+                <StackLayout orientation="vertical" *ngFor="let photo of shoe.photos" >
+                        <Image 
+                                class="thumb-photo"
+                                [src]="photo.file"
+                                (tap)="show(photo.file)"
+                                [ngClass]="{'thumb-4':colors == 4, 'thumb-3':colors < 4}">
+                        </Image>
+                        <Label class="color-name"
+                                [text]="photo.name"
+                                [ngClass]="{'thumb-4':colors == 4, 'thumb-3':colors < 4}">
+                        </Label>
+                </StackLayout>
+        </WrapLayout>
 </StackLayout>

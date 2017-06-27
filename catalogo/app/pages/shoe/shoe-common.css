@@ -1,21 +1,32 @@
-Label {
-    text-align: center;
+Label.title {
+    width: 100%;
     font-size: 30;
-    color: blue;
-    margin-top: 20;
+    text-align: center;
+    padding-top: 20;
+    padding-bottom: 20;
 }
 
 .main-photo{
-    width: 60%;
-    height: 60%;
+    width: 94%;
+    margin-bottom: 30px;
 }
 
-.thumb-3{
+.thumb-photo.thumb-3{
     width: 33%;
     height: 33%;
 }
 
-.thumb-4{
+.thumb-photo.thumb-4{
     width: 25%;
     height: 25%;
+}
+.color-name {
+    text-align: center;
+    font-size: 10px;
+}
+.color-name.thumb-3 {
+    width: 33%;
+}
+.color-name.thumb-4 {
+    width: 25%;
 }

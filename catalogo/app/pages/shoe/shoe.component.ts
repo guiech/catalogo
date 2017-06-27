@@ -14,6 +14,7 @@ import { ShoeService } from "../../shared/shoes/shoes.service";
 export class ShoeComponent implements OnInit {
    private shoe: Shoe;
    private currentPhoto: string;
+   private colors:number;
 
     constructor(
         private shoeService: ShoeService,
@@ -23,7 +24,8 @@ export class ShoeComponent implements OnInit {
     ngOnInit(): void {
         const id = this.route.snapshot.params["id"];
         this.shoe = this.shoeService.getShoe(id);
-        this.currentPhoto = this.shoe.photos[0];
+        this.currentPhoto = this.shoe.photos[0].file;
+        this.colors = this.shoe.colors;
     }
 
     show(photo: string) {

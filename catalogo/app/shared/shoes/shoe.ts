@@ -3,5 +3,9 @@ export class Shoe {
     name: string;
     description: string;
     colors: number;
-    photos: string[];
+    photos: [{
+        file: string;
+        name: string;
+    }]
+    line: string;
 }
