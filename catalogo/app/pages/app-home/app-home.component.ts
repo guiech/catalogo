@@ -1,5 +1,6 @@
-import { Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Page } from "ui/page";
 
 @Component({
 	selector: 'app-home',
@@ -8,14 +9,18 @@ import { Router } from '@angular/router';
 	styleUrls: ['./app-home.css']
 })
 
-export class AppHomeComponent {
+export class AppHomeComponent implements OnInit{
 
 	private logoPath : string = "~/images/logo.png";
 
-	constructor(private router: Router) {}
+	constructor(private router: Router, private page: Page) {}
+
+	ngOnInit() {
+		this.page.actionBarHidden = true;
+	}
 
 	private btnClick= function () {
-		console.log("click");
+		this.page.actionBarHidden = true;
 		this.router.navigate(["/list"]);
 	};
 }

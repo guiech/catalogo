@@ -1,4 +1,3 @@
-import * as scrollViewModule from "tns-core-modules/ui/scroll-view";
 import { Component, OnInit } from "@angular/core";
 
 import { Shoe } from "../../shared/shoes/shoe";

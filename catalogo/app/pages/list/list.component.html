@@ -1,9 +1,14 @@
-<ScrollView>
-    <WrapLayout *ngFor="let line of lines;">
-            <Label [text]="line.titulo"></Label>
-            <StackLayout *ngFor="let shoe of line.shoes; let i = index" orientation="vertical" class="shoe" [ngClass]="{'par':i%2==0, 'impar':i%2==1}">
-                    <Image [src]="shoe.photos[0]" horizontalAlignment="center" stretch="aspectFill" [nsRouterLink]="['/shoe', shoe.id]"></Image>
-                    <Label class="label2" [text]="shoe.name + ' (' + shoe.colors + ')'" [nsRouterLink]="['/shoe', shoe.id]"></Label>
-            </StackLayout>
-    </WrapLayout>
+<ActionBar title="Karen Klier"></ActionBar>
+<ScrollView #scroll>
+    <StackLayout>
+        <StackLayout *ngFor="let line of lines;">
+                <Label [text]="line.titulo"></Label>
+                <WrapLayout>
+                        <StackLayout *ngFor="let shoe of line.shoes; let i = index" orientation="vertical" class="shoe" [ngClass]="{'left':i%2==0, 'right':i%2==1}">
+                                <Image [src]="shoe.photos[0]" horizontalAlignment="center" stretch="aspectFill" [nsRouterLink]="['/shoe', shoe.id]"></Image>
+                                <Label class="label2" [text]="shoe.name + ' (' + shoe.colors + ')'" [nsRouterLink]="['/shoe', shoe.id]"></Label>
+                        </StackLayout>
+                </WrapLayout>
+        </StackLayout>
+    </StackLayout>
 </ScrollView>

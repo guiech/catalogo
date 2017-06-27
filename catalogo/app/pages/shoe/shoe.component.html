@@ -1,7 +1,12 @@
+<ActionBar title="Karen Klier"></ActionBar>
 <StackLayout>
     <Label [text]="shoe.name"></Label>
-    <Image class="main-photo" [src]="shoe.photos[0]"></Image>
+    <Image class="main-photo" [src]="currentPhoto"></Image>
         <StackLayout orientation="horizontal">
-                <Image class="secondary-photo" *ngFor="let photo of shoe.photos" [src]="photo"></Image>
+                <Image 
+                        *ngFor="let photo of shoe.photos"
+                        [src]="photo"
+                        (tap)="show(photo)"
+                        [ngClass]="{'thumb-4':shoe.photos.length == 4, 'thumb-3':shoe.photos.length < 4}"></Image>
         </StackLayout>
 </StackLayout>
