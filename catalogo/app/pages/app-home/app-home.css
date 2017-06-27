@@ -1,6 +1,6 @@
 
 StackLayout {
-  background-color: black;
+  background-color: white;
 }
 
 Image {
@@ -12,6 +12,16 @@ Image {
 
 Button {
   color: black;
-  background-color: white;
+  background-color: #eeeeee;
   width: 53%;
+  border:2px solid black;
+  }
+
+Label{
+  color: black;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 40;
+  margin-top: 30%;
+  margin-bottom: 10;
 }
