@@ -98,6 +98,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/maria-409-11.JPG", name:""},
                 {file:"~/images/maria-409-11-verde.JPG", name:"Verde"},
                 {file:"~/images/maria-409-11-suela.JPG", name:"Suela"},
                 {file:"~/images/maria-409-11-negro.JPG", name:"Negro"}
@@ -190,6 +191,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/julia-6001-02.JPG", name:""},
                 {file:"~/images/julia-6001-02-azul.JPG", name:"Azul"},
                 {file:"~/images/julia-6001-02-negro.JPG", name:"Negro"},
                 {file:"~/images/julia-6001-02-suela.JPG", name:"Suela"}
@@ -203,6 +205,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/julia-6001-03.JPG", name:""},
                 {file:"~/images/julia-6001-03-marron.JPG", name:"Marron"},
                 {file:"~/images/julia-6001-03-negro.JPG", name:"Negro"},
                 {file:"~/images/julia-6001-03-verde.JPG", name:"Verde"}
@@ -230,6 +233,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/anto-3700-02.JPG", name:""},
                 {file:"~/images/anto-3700-02-rosa.JPG", name:"Rosa"},
                 {file:"~/images/anto-3700-02-negro.JPG", name:"Negro"},
                 {file:"~/images/anto-3700-02-suela.JPG", name:"Suela"}
@@ -322,6 +326,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/pilar-404-03.JPG", name:""},
                 {file:"~/images/pilar-404-03-negro.JPG", name:"Negro"},
                 {file:"~/images/pilar-404-03-suela.JPG", name:"Suela"},
                 {file:"~/images/pilar-404-03-blanco.JPG", name:"Blanco"}
@@ -363,6 +368,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/zoe-700-03.JPG", name:""},
                 {file:"~/images/zoe-700-03-negro.JPG", name:"Negro"},
                 {file:"~/images/zoe-700-03-rosa.JPG", name:"Rosa"},
                 {file:"~/images/zoe-700-03-vison.JPG", name:"Vison"}
@@ -441,6 +447,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/anita-1224-01.JPG", name:""},
                 {file:"~/images/anita-1224-01-blanco.JPG", name:"Blanco"},
                 {file:"~/images/anita-1224-01-negro.JPG", name:"Negro"},
                 {file:"~/images/anita-1224-01-rosa.JPG", name:"Rosa"}
@@ -454,6 +461,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/anita-1224-02.JPG", name:""},
                 {file:"~/images/anita-1224-02-rosa.JPG", name:"Rosa"},
                 {file:"~/images/anita-1224-02-blanco.JPG", name:"Blanco"},
                 {file:"~/images/anita-1224-02-negro.JPG", name:"Negro"}
@@ -467,6 +475,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/lola-500-01.JPG", name:""},
                 {file:"~/images/lola-500-01-coral.JPG", name:"CH.Coral"},
                 {file:"~/images/lola-500-01-negro.JPG", name:"CH.Negro"},
                 {file:"~/images/lola-500-01-rosa.JPG", name:"CH.Rosa"}
@@ -494,6 +503,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/lola-500-03.JPG", name:""},
                 {file:"~/images/lola-500-03-suela.JPG", name:"Suela"},
                 {file:"~/images/lola-500-03-negro.JPG", name:"Negro"},
                 {file:"~/images/lola-500-03-vison.JPG", name:"Vison"}
@@ -533,6 +543,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/ingrid-1229-03.JPG", name:""},
                 {file:"~/images/ingrid-1229-03-azul.JPG", name:"Azul"},
                 {file:"~/images/ingrid-1229-03-negro.JPG", name:"Negro"},
                 {file:"~/images/ingrid-1229-03-verde.JPG", name:"Verde"}
