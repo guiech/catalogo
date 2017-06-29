@@ -111,6 +111,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/maria-409-12.JPG", name:""},
                 {file:"~/images/maria-409-12-vison.JPG", name:"Vison"},
                 {file:"~/images/maria-409-12-suela.JPG", name:"Suela"},
                 {file:"~/images/maria-409-12-negro.JPG", name:"Negro"}
