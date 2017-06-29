@@ -467,9 +467,9 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
-                {file:"~/images/lola-500-01-coral.JPG", name:"Coral"},
-                {file:"~/images/lola-500-01-negro.JPG", name:"Negro"},
-                {file:"~/images/lola-500-01-rosa.JPG", name:"Rosa"}
+                {file:"~/images/lola-500-01-coral.JPG", name:"CH.Coral"},
+                {file:"~/images/lola-500-01-negro.JPG", name:"CH.Negro"},
+                {file:"~/images/lola-500-01-rosa.JPG", name:"CH.Rosa"}
             ],
             thumb: "~/thumbs/lola-500-01-coral.JPG",
             line: "Lola"
@@ -507,9 +507,9 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
-                {file:"~/images/ingrid-1229-01-blanco.JPG", name:"Blanco"},
-                {file:"~/images/ingrid-1229-01-negro.JPG", name:"Negro"},
-                {file:"~/images/ingrid-1229-01-rosa.JPG", name:"Rosa"}
+                {file:"~/images/ingrid-1229-01-blanco.JPG", name:"CH.Blanco"},
+                {file:"~/images/ingrid-1229-01-negro.JPG", name:"CH.Negro"},
+                {file:"~/images/ingrid-1229-01-rosa.JPG", name:"CH.Rosa"}
             ],
             thumb: "~/thumbs/ingrid-1229-01-blanco.JPG",
             line: "Ingrid"
