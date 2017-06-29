@@ -5,7 +5,7 @@
                 <Label [text]="line.titulo"></Label>
                 <WrapLayout>
                         <StackLayout *ngFor="let shoe of line.shoes; let i = index" orientation="vertical" class="shoe" [ngClass]="{'left':i%2==0, 'right':i%2==1}">
-                                <Image [src]="shoe.photos[0].file" horizontalAlignment="center" stretch="aspectFill" [nsRouterLink]="['/shoe', shoe.id]"></Image>
+                                <Image [src]="shoe.thumb" horizontalAlignment="center" stretch="fill" [nsRouterLink]="['/shoe', shoe.id]"></Image>
                                 <Label class="label2" [text]="shoe.name + ' (' + shoe.colors + ')'" [nsRouterLink]="['/shoe', shoe.id]"></Label>
                         </StackLayout>
                 </WrapLayout>

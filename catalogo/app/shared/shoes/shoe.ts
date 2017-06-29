@@ -6,6 +6,7 @@ export class Shoe {
     photos: [{
         file: string;
         name: string;
-    }]
+    }];
+    thumb: string;
     line: string;
 }

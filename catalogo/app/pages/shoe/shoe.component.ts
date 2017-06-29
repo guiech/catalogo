@@ -14,7 +14,7 @@ import { ShoeService } from "../../shared/shoes/shoes.service";
 export class ShoeComponent implements OnInit {
    private shoe: Shoe;
    private currentPhoto: string;
-   private colors:number;
+   private photos:number;
 
     constructor(
         private shoeService: ShoeService,
@@ -25,11 +25,11 @@ export class ShoeComponent implements OnInit {
         const id = this.route.snapshot.params["id"];
         this.shoe = this.shoeService.getShoe(id);
         this.currentPhoto = this.shoe.photos[0].file;
-        this.colors = this.shoe.colors;
+        this.photos = this.shoe.photos.length;
     }
 
     show(photo: string) {
-        console.log("click photo");
+        console.log("click photo" + photo);
         this.currentPhoto = photo;
     }
 }
