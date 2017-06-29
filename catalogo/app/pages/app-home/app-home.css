@@ -25,3 +25,7 @@ Label{
   margin-top: 30%;
   margin-bottom: 10;
 }
+
+Label.label-temporada{
+   font-size: 20;
+}

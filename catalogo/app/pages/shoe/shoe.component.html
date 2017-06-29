@@ -9,12 +9,11 @@
                                         class="thumb-photo"
                                         [src]="photo.file"
                                         (tap)="show(photo.file)"
-                                        stretch="aspectFit"
-                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4}">
+                                        [ngClass]="{'thumb-4':colors == 4, 'thumb-3':colors < 4}">
                                 </Image>
                                 <Label class="color-name"
                                         [text]="photo.name"
-                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4}">
+                                        [ngClass]="{'thumb-4':colors == 4, 'thumb-3':colors < 4}">
                                 </Label>
                         </StackLayout>
                 </WrapLayout>
