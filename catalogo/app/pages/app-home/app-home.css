@@ -1,6 +1,6 @@
 
 StackLayout {
-  background-color: black;
+  background-color: white;
 }
 
 Image {
@@ -19,7 +19,7 @@ Button {
   }
 
 Label{
-  color: white;
+  color: black;
   text-align: center;
   font-family: Calibri;
   font-size: 90px;
