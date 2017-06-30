@@ -2,7 +2,7 @@
 <ScrollView>
         <StackLayout>
                 <Label class="title" [text]="shoe.line + ' ' + shoe.name"></Label>
-                <Image class="main-photo" [src]="currentPhoto"></Image>
+                <Image width="600" height="600" class="main-photo" [src]="currentPhoto"></Image>
                 <WrapLayout>
                         <StackLayout orientation="vertical" *ngFor="let photo of shoe.photos" >
                                 <Image 

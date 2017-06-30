@@ -2,31 +2,37 @@ Label.title {
     width: 100%;
     font-size: 30;
     text-align: center;
-    padding-top: 20;
+    padding-top: 40;
     padding-bottom: 20;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main-photo{
     width: 94%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .thumb-photo.thumb-3{
     width: 33%;
-    height: 150px;
+    height: 200px;
 }
 
 .thumb-photo.thumb-4{
     width: 25%;
-    height: 150px;
+    height: 200px;
 }
 .color-name {
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
 }
 .color-name.thumb-3 {
     width: 33%;
 }
 .color-name.thumb-4 {
     width: 25%;
+}
+
+WrapLayout{
+    margin-top: 20px;
 }
