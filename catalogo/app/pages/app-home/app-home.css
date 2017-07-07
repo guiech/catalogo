@@ -15,18 +15,18 @@ Button {
   background-color: #eeeeee;
   width: 53%;
   border:2px solid black;
-  font-size: 20px;
+  font-size: 16px;
   }
 
 Label{
   color: black;
   text-align: center;
   font-family: Calibri;
-  font-size: 90px;
+  font-size: 45px;
   margin-top: 30%;
   margin-bottom: 10;
 }
 
 Label.label-temporada{
-   font-size: 40;
+   font-size: 20;
 }

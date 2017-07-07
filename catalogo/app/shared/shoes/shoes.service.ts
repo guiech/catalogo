@@ -43,6 +43,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/emma-430-01.JPG", name:""},
                 {file:"~/images/emma-430-01-oro.JPG", name:"Oro"},
                 {file:"~/images/emma-430-01-negro.JPG", name:"Negro"},
                 {file:"~/images/emma-430-01-celeste.JPG", name:"Celeste"}
@@ -126,6 +127,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/emilia-4016-01.JPG", name:""},
                 {file:"~/images/emilia-4016-01-blanco.JPG", name:"Blanco"},
                 {file:"~/images/emilia-4016-01-negro.JPG", name:"Negro"},
                 {file:"~/images/emilia-4016-01-rosa.JPG", name:"Rosa"}
@@ -139,6 +141,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/emilia-4016-02.JPG", name:""},
                 {file:"~/images/emilia-4016-02-celeste.JPG", name:"Celeste"},
                 {file:"~/images/emilia-4016-02-negro.JPG", name:"Negro"},
                 {file:"~/images/emilia-4016-02-suela.JPG", name:"Suela"}
@@ -152,6 +155,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/emilia-4016-03.JPG", name:""},
                 {file:"~/images/emilia-4016-03-rojo.JPG", name:"Rojo"},
                 {file:"~/images/emilia-4016-03-vison.JPG", name:"Vison"},
                 {file:"~/images/emilia-4016-03-negro.JPG", name:"Negro"}
@@ -165,6 +169,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/emilia-4016-04.JPG", name:""},
                 {file:"~/images/emilia-4016-04-suela.JPG", name:"Suela"},
                 {file:"~/images/emilia-4016-04-verde.JPG", name:"Verde"},
                 {file:"~/images/emilia-4016-04-negro.JPG", name:"Negro"}
@@ -261,6 +266,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/cecilia-408-01.JPG", name:""},
                 {file:"~/images/cecilia-408-01-negro.JPG", name:"Negro"},
                 {file:"~/images/cecilia-408-01-suela.JPG", name:"Suela"},
                 {file:"~/images/cecilia-408-01-verde.JPG", name:"Verde"}
@@ -274,6 +280,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/cecilia-408-02.JPG", name:""},
                 {file:"~/images/cecilia-408-02-blanco.JPG", name:"Blanco"},
                 {file:"~/images/cecilia-408-02-negro.JPG", name:"Negro"},
                 {file:"~/images/cecilia-408-02-suela.JPG", name:"Suela"}
@@ -287,6 +294,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/cecilia-408-03.JPG", name:""},
                 {file:"~/images/cecilia-408-03-celeste.JPG", name:"Celeste"},
                 {file:"~/images/cecilia-408-03-negro.JPG", name:"Negro"},
                 {file:"~/images/cecilia-408-03-oro.JPG", name:"Oro"}
@@ -300,6 +308,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/pilar-404-01.JPG", name:""},
                 {file:"~/images/pilar-404-01-azul.JPG", name:"Azul"},
                 {file:"~/images/pilar-404-01-negro.JPG", name:"Negro"},
                 {file:"~/images/pilar-404-01-vison.JPG", name:"Vison"}
@@ -311,8 +320,9 @@ export class ShoeService {
             id: "404-02",
             name: "404-02",
             description: "",
-            colors: 2,
+            colors: 3,
             photos: [
+                {file:"~/images/pilar-404-02.JPG", name:""},
                 {file:"~/images/pilar-404-02-verde.JPG", name:"Verde"},
                 {file:"~/images/pilar-404-02-suela.JPG", name:"Suela"},
                 {file:"~/images/pilar-404-02-negro.JPG", name:"Negro"},
@@ -382,6 +392,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/antonia-400-02.JPG", name:""},
                 {file:"~/images/antonia-400-01-negro.JPG", name:"Negro"},
                 {file:"~/images/antonia-400-01-blanco.JPG", name:"Blanco"},
                 {file:"~/images/antonia-400-01-suela.JPG", name:"Suela"}
@@ -409,6 +420,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/antonia-400-02.JPG", name:""},
                 {file:"~/images/antonia-400-03-lila.JPG", name:"Lila"},
                 {file:"~/images/antonia-400-03-negro.JPG", name:"Negro"},
                 {file:"~/images/antonia-400-03-suela.JPG", name:"Suela"}
@@ -422,6 +434,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/antonia-400-02.JPG", name:""},
                 {file:"~/images/antonia-400-04-blanco.JPG", name:"Blanco"},
                 {file:"~/images/antonia-400-04-negro.JPG", name:"Negro"},
                 {file:"~/images/antonia-400-04-suela.JPG", name:"Suela"}
@@ -517,6 +530,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/ingrid-1229-02.JPG", name:""},
                 {file:"~/images/ingrid-1229-01-blanco.JPG", name:"CH.Blanco"},
                 {file:"~/images/ingrid-1229-01-negro.JPG", name:"CH.Negro"},
                 {file:"~/images/ingrid-1229-01-rosa.JPG", name:"CH.Rosa"}
@@ -530,6 +544,7 @@ export class ShoeService {
             description: "",
             colors: 3,
             photos: [
+                {file:"~/images/ingrid-1229-02b.JPG", name:""},
                 {file:"~/images/ingrid-1229-02-suela.JPG", name:"Suela"},
                 {file:"~/images/ingrid-1229-02-negro.JPG", name:"Negro"},
                 {file:"~/images/ingrid-1229-02-vison.JPG", name:"Vison"}
