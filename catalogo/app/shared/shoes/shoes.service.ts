@@ -565,7 +565,90 @@ export class ShoeService {
             ],
             thumb: "~/thumbs/ingrid-1229-03-azul.JPG",
             line: "Ingrid"
+        },
+
+        {
+            id: "406-50",
+            name: "406-50",
+            description: "",
+            colors: 2,
+            photos: [
+                {file:"~/images/462-50-lineaagos.jpg", name:"Negro"},
+                {file:"~/images/462-50-lineaagos1.jpg", name:"Rosa"}
+            ], 
+            thumb: "~/images/462-50-lineaagos.jpg",
+            line: "Agos"
+        },
+         {
+            id: "406-51",
+            name: "406-51",
+            description: "",
+            colors: 2,
+            photos: [
+                {file:"~/images/462-51-lineaagos.jpg", name:"Negro"},
+                {file:"~/images/462-51-lineaagos1.jpg", name:"Rosa"}
+            ], 
+            thumb: "~/images/462-51-lineaagos1.jpg",
+            line: "Agos"
+        },
+         {
+            id: "406-52",
+            name: "406-52",
+            description: "",
+            colors: 3,
+            photos: [
+                {file:"~/images/462-52-lineaagos.jpg", name:"Negro"},
+                {file:"~/images/462-52-lineaagos1.jpg", name:"Rosa"},
+                {file:"~/images/462-52-lineaagos2.jpg", name:"Suela"}
+            ], 
+            thumb: "~/images/462-52-lineaagos1.jpg",
+            line: "Agos"
+        },
+
+        {
+            id: "2018-01",
+            name: "2018-01",
+            description: "",
+            colors: 3,
+            photos: [
+                {file:"~/images/2018-01-lineapaz.jpg", name:"Negro"},
+                {file:"~/images/2018-01-lineapaz1.jpg", name:"Rosa"},
+                {file:"~/images/2018-01-lineapaz2.jpg", name:"Oro"}
+            ], 
+            thumb: "~/images/2018-01-lineapaz.jpg",
+            line: "Paz"
+        },
+
+
+
+        {
+            id: "2018-02",
+            name: "2018-02",
+            description: "",
+            colors: 3,
+            photos: [
+                {file:"~/images/2018-02-lineapaz.jpg", name:"Negro"},
+                {file:"~/images/2018-02-lineapaz1.jpg", name:"Rosa"},
+                {file:"~/images/2018-02-lineapaz2.jpg", name:"Vison"}
+            ], 
+            thumb: "~/images/2018-02-lineapaz.jpg",
+            line: "Paz"
+        },
+
+        {
+            id: "2018-03",
+            name: "2018-03",
+            description: "",
+            colors: 3,
+            photos: [
+                {file:"~/images/2018-03-lineapaz.jpg", name:"Negro"},
+                {file:"~/images/2018-03-lineapaz1.jpg", name:"Blanco"},
+                {file:"~/images/2018-03-lineapaz2.jpg", name:"Oro"}
+            ], 
+            thumb: "~/images/2018-03-lineapaz.jpg",
+            line: "Paz"
         }
+
     );
     
     getShoes(): Shoe[] {
@@ -594,6 +677,8 @@ export class ShoeService {
         this.lines.push(new Line(this.getShoesByLine("Anita"), "Linea Anita"));
         this.lines.push(new Line(this.getShoesByLine("Lola"), "Linea Lola"));
         this.lines.push(new Line(this.getShoesByLine("Ingrid"), "Linea Ingrid"));
+        this.lines.push(new Line(this.getShoesByLine("Agos"), "Linea Agos"));
+        this.lines.push(new Line(this.getShoesByLine("Paz"), "Linea Paz"));
         return this.lines;
     }
 
