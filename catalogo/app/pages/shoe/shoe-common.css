@@ -1,0 +1,40 @@
+Label.title {
+    width: 100%;
+    font-size: 30;
+    text-align: center;
+    padding-top: 40;
+    padding-bottom: 20;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-photo{
+    width: 94%;
+    margin-bottom: 20px;
+}
+
+.thumb-photo.thumb-3{
+    width: 33%;
+    height: 150px;
+}
+
+.thumb-photo.thumb-1{
+    width: 30%;
+    height: 150px;
+}
+
+.thumb-photo.thumb-4{
+    width: 22%;
+    height: 150px;
+}
+.color-name {
+    text-align: center;
+    font-size: 25px;
+}
+
+.color-name.thumb-3 {
+    width: 33%;
+}
+.color-name.thumb-4 {
+    width: 25%;
+}

@@ -1,0 +1,22 @@
+<ActionBar title="Karen Klier"></ActionBar>
+<ScrollView>
+        <StackLayout>
+                <Label class="title" [text]="shoe.line + ' ' + shoe.name"></Label>
+                <Image width="450" height="450" class="main-photo" [src]="currentPhoto"></Image>
+                <WrapLayout>
+                        <StackLayout orientation="vertical" *ngFor="let photo of shoe.photos" >
+                                <Image 
+                                        class="thumb-photo"
+                                        [src]="photo.file"
+                                        (tap)="show(photo.file)"
+                                        stretch="aspectFit"
+                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4, 'thumb-1':photos < 3}">
+                                </Image>
+                                <Label class="color-name"
+                                        [text]="photo.name"
+                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4, 'thumb-1':photos < 3}">
+                                </Label>
+                        </StackLayout>
+                </WrapLayout>
+        </StackLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+
+StackLayout {
+  background-color: white;
+}
+
+Image {
+  padding-bottom : 10;
+  margin-top : 40;
+  width: 50%;
+  height: 50%;
+}
+
+Button {
+  color: black;
+  background-color: #eeeeee;
+  width: 53%;
+  border:2px solid black;
+  font-size: 16px;
+  }
+
+Label{
+  color: black;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 45px;
+  margin-top: 30%;
+  margin-bottom: 10;
+}
+
+Label.label-temporada{
+   font-size: 20;
+}
