@@ -1,7 +1,4 @@
 
-StackLayout {
-  background-color: white;
-}
 
 Image {
   padding-bottom : 10;
@@ -11,10 +8,8 @@ Image {
 }
 
 Button {
-  color: black;
-  background-color: #eeeeee;
+  color: #e9e9e9;
   width: 53%;
-  border:2px solid black;
   font-size: 16px;
   }
 
@@ -28,5 +23,6 @@ Label{
 }
 
 Label.label-temporada{
-   font-size: 20;
+   font-size: 24;
 }
+
