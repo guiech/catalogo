@@ -30,7 +30,7 @@ export class ShoeComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.page.actionBarHidden = true;
+        this.page.actionBarHidden = false;
         const id = this.route.snapshot.params["id"];
         this.shoe = this.shoeService.getShoe(id);
         this.currentPhoto = this.shoe.photos[0].file;
