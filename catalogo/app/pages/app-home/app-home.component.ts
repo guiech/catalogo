@@ -19,7 +19,7 @@ export class AppHomeComponent implements OnInit{
 		this.page.actionBarHidden = true;
 	}
 
-	private btnClick= function () {
+	btnClick() {
 		this.page.actionBarHidden = true;
 		this.router.navigate(["/list"]);
 	};

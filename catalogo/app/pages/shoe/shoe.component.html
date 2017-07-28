@@ -1,22 +1,25 @@
-<ActionBar title="Brand Name"></ActionBar>
-<ScrollView>
-        <StackLayout>
-                <Label class="title" [text]="shoe.line + ' ' + shoe.name"></Label>
-                <Image width="450" height="450" class="main-photo" [src]="currentPhoto"></Image>
-                <WrapLayout>
-                        <StackLayout orientation="vertical" *ngFor="let photo of shoe.photos" >
-                                <Image 
-                                        class="thumb-photo"
-                                        [src]="photo.file"
-                                        (tap)="show(photo.file)"
-                                        stretch="aspectFit"
-                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4, 'thumb-1':photos < 3}">
-                                </Image>
-                                <Label class="color-name"
-                                        [text]="photo.name"
-                                        [ngClass]="{'thumb-4':photos == 4, 'thumb-3':photos < 4, 'thumb-1':photos < 3}">
-                                </Label>
-                        </StackLayout>
-                </WrapLayout>
-        </StackLayout>
-</ScrollView>
+<ActionBar [title]="shoe.line + ' ' + shoe.name"></ActionBar>
+<GridLayout rows="*, auto">
+        <Image row="0" class="main-photo" [src]="currentPhoto" stretch="aspectFit" height="100%" style="margin-top: 5px;margin-bottom: 5px;"></Image>
+        <ScrollView row="1" orientation="horizontal">
+                <StackLayout #footer orientation="horizontal">
+                        <ng-template ngFor let-i="index" let-photo [ngForOf]="shoe.photos">
+                                <GridLayout columns="auto" rows="auto, auto" class="thumb-container" style="margin-left: 5px;">
+                                        <Image row="0" col="0"
+                                                class="thumb-photo"
+                                                [src]="photo.file"
+                                                (tap)="show(photo.file)"
+                                                stretch="aspectFill"
+                                                height="{{hpx + 'px'}}"
+                                                >
+                                        </Image>
+                                        <Label row="1" col="0"
+                                                class="color-name"
+                                                [text]="photo.name"
+                                                style="text-align:center;font-size: 25px;background-color:transparent;">
+                                        </Label>
+                                </GridLayout>
+                        </ng-template>
+                </StackLayout>
+        </ScrollView>
+</GridLayout>
