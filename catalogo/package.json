@@ -27,7 +27,6 @@
     "rxjs": "^5.4.0",
     "tns-core-modules": "next",
     "zone.js": "^0.8.11"
-
   },
   "devDependencies": {
     "babel-traverse": "6.24.1",

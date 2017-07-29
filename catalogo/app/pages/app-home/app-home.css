@@ -14,10 +14,10 @@ Button {
   }
 
 Label{
-  color: black;
+  color: white;
   text-align: center;
   font-family: Calibri;
-  font-size: 45px;
+  font-size: 85px;
   margin-top: 30%;
   margin-bottom: 10;
 }

@@ -13,7 +13,11 @@ export class AppHomeComponent implements OnInit{
 
 	private logoPath : string = "~/images/logo.png";
 
-	constructor(private router: Router, private page: Page) {}
+	constructor(private router: Router, private page: Page) {
+		this.page.backgroundImage = "res://background";
+		this.page.css = 'page {background-size: cover;}';
+		console.log("1");
+	}
 
 	ngOnInit() {
 		this.page.actionBarHidden = true;
