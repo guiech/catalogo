@@ -1,0 +1,17 @@
+  <ActionBar title="Brand Name"></ActionBar>
+  <ScrollView #scroll>
+    <StackLayout>
+        <StackLayout *ngFor="let line of lines;">
+                <Label [text]="'- -  ' + line.titulo + '  - -'"></Label>           
+                <WrapLayout>
+                        <StackLayout *ngFor="let shoe of line.shoes; let i = index" orientation="vertical" class="shoe" [ngClass]="{'left':i%2==0, 'right':i%2==1}">
+                                <Image [src]="shoe.thumb" horizontalAlignment="center" stretch="fill" (tap)="goToShoe(shoe.id)"></Image>
+                                <StackLayout orientation="horizontal" >
+                                        <Label [text]="" style=" margin-bottom: 120px;width:8px; background-color: deepskyblue;"></Label>           
+                                        <Label class="label2" [text]="shoe.name + ' (' + shoe.colors +' colores'+ ')'" (tap)="goToShoe(shoe.id)"></Label>
+                                </StackLayout>
+                        </StackLayout>
+                </WrapLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

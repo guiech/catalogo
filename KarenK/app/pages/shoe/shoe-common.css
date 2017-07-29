@@ -1,0 +1,26 @@
+Label.title {
+    /* width: 100%; */
+    /* font-size: 30;
+    text-align: center; */
+    /* padding-top: 40; */
+    /* padding-bottom: 20; */
+    /* color: #000001;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.main-photo{
+    /* margin-bottom: 0px; */
+}
+.thumb-photo{
+    /* height: 100%; */
+}
+.color-name {
+    /* text-align: center;
+    font-size: 25px; */
+}
+.thumb-container:first {
+    /* margin-left: 5px; */
+}
+.thumb-container {
+    /* margin-right: 5px; */
+}
