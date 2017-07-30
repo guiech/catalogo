@@ -664,21 +664,10 @@ export class ShoeService {
     }
 
     buildLines(){
-        this.lines.push(new Line(this.getShoesByLine("Joaquina"), "Linea Joaquina"));
-        this.lines.push(new Line(this.getShoesByLine("Emma"), "Linea Emma"));
-        this.lines.push(new Line(this.getShoesByLine("Maria"), "Linea Maria"));
-        this.lines.push(new Line(this.getShoesByLine("Emilia"), "Linea Emilia"));
-        this.lines.push(new Line(this.getShoesByLine("Julia"), "Linea Julia"));
-        this.lines.push(new Line(this.getShoesByLine("Anto"), "Linea Anto"));
-        this.lines.push(new Line(this.getShoesByLine("Cecilia"), "Linea Cecilia"));
-        this.lines.push(new Line(this.getShoesByLine("Pilar"), "Linea Pilar"));
-        this.lines.push(new Line(this.getShoesByLine("Zoe"), "Linea Zoe"));
+      
+        this.lines.push(new Line(this.getShoesByLine("Emilia"), "Linea Emilia"));    
         this.lines.push(new Line(this.getShoesByLine("Antonia"), "Linea Antonia"));
-        this.lines.push(new Line(this.getShoesByLine("Anita"), "Linea Anita"));
-        this.lines.push(new Line(this.getShoesByLine("Lola"), "Linea Lola"));
-        this.lines.push(new Line(this.getShoesByLine("Ingrid"), "Linea Ingrid"));
-        this.lines.push(new Line(this.getShoesByLine("Agos"), "Linea Agos"));
-        this.lines.push(new Line(this.getShoesByLine("Paz"), "Linea Paz"));
+
         return this.lines;
     }
 
