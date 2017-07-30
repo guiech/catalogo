@@ -1,8 +1,9 @@
 <ActionBar [title]="shoe.line + ' ' + shoe.name"></ActionBar>
-<GridLayout rows="*, auto">
-        <Image row="0" class="main-photo" [src]="currentPhoto" stretch="aspectFit" height="100%" style="margin-top: 5px;margin-bottom: 5px;"></Image>
-        <ScrollView row="1" orientation="horizontal">
-                <StackLayout #footer orientation="horizontal">
+<GridLayout rows="*, auto, auto">
+        <Image row="0" class="main-photo" [src]="currentPhoto" stretch="aspectFit" height="100%"></Image>
+        <Label row="1" style="width:100%; height: 5px; background-color: white;" [text]=""></Label>
+        <ScrollView row="2" orientation="horizontal">
+                <StackLayout #footer orientation="horizontal" horizontalAlignment="center">
                         <ng-template ngFor let-i="index" let-photo [ngForOf]="shoe.photos">
                                 <GridLayout columns="auto" rows="auto, auto" class="thumb-container" style="margin-left: 5px;">
                                         <Image row="0" col="0"
