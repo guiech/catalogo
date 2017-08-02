@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef} from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Page } from "ui/page";
+import { SwipeDirection, SwipeGestureEventData } from "ui/gestures";
 
 import { Shoe } from "../../shared/shoes/shoe";
 import { ShoeService } from "../../shared/shoes/shoes.service";
@@ -17,7 +18,7 @@ import * as _application from 'application';
 })
 export class ShoeComponent implements OnInit {
    private shoe: Shoe;
-   private currentPhoto: string;
+   private currentPhotoIndex: number;
    private photos:number;
    private hpx:number;
 
@@ -33,7 +34,7 @@ export class ShoeComponent implements OnInit {
         this.page.actionBarHidden = false;
         const id = this.route.snapshot.params["id"];
         this.shoe = this.shoeService.getShoe(id);
-        this.currentPhoto = this.shoe.photos[0].file;
+        this.currentPhotoIndex = 0;
         this.photos = this.shoe.photos.length;
     }
 
@@ -41,8 +42,12 @@ export class ShoeComponent implements OnInit {
         _application.off(_application.orientationChangedEvent);
     }
     
-    show(photo: string) {
-        this.currentPhoto = photo;
+    show(index: number) {
+        this.currentPhotoIndex = index;
+    }
+
+    getCurrentPhoto() {
+        return this.shoe.photos[this.currentPhotoIndex].file;
     }
 
     setOrientation(args: _application.OrientationChangedEventData) {
@@ -54,5 +59,22 @@ export class ShoeComponent implements OnInit {
 
     setThumbHeight() {
         this.hpx = Math.round(Device.height * 10 / 100);
+    }
+
+    onSwipe(args: SwipeGestureEventData) {
+        switch(args.direction) {
+            case SwipeDirection.left:
+                if(this.currentPhotoIndex < (this.photos - 1)) {
+                    this.currentPhotoIndex++;
+                }
+                break;
+            case SwipeDirection.right:
+                if(this.currentPhotoIndex > 0) {
+                    this.currentPhotoIndex--;
+                }
+                break;
+            default:
+                break;
+        }
     }
 }

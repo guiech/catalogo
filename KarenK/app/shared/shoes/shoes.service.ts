@@ -130,6 +130,12 @@ export class ShoeService {
                 {file:"~/images/emilia-4016-01.JPG", name:""},
                 {file:"~/images/emilia-4016-01-blanco.JPG", name:"Blanco"},
                 {file:"~/images/emilia-4016-01-negro.JPG", name:"Negro"},
+                {file:"~/images/emilia-4016-01-rosa.JPG", name:"Rosa"},
+                {file:"~/images/emilia-4016-01-blanco.JPG", name:"Blanco"},
+                {file:"~/images/emilia-4016-01-negro.JPG", name:"Negro"},
+                {file:"~/images/emilia-4016-01-rosa.JPG", name:"Rosa"},
+                {file:"~/images/emilia-4016-01-blanco.JPG", name:"Blanco"},
+                {file:"~/images/emilia-4016-01-negro.JPG", name:"Negro"},
                 {file:"~/images/emilia-4016-01-rosa.JPG", name:"Rosa"}
             ],
             thumb: "~/thumbs/emilia-4016-01-blanco.JPG",

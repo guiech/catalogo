@@ -1,6 +1,6 @@
 <ActionBar [title]="shoe.line + ' ' + shoe.name"></ActionBar>
 <GridLayout rows="*, auto, auto">
-        <Image row="0" class="main-photo" [src]="currentPhoto" stretch="aspectFit" height="100%"></Image>
+        <Image row="0" class="main-photo" [src]="getCurrentPhoto()" stretch="aspectFit" height="100%" (swipe)="onSwipe($event)"></Image>
         <Label row="1" style="width:100%; height: 5px; background-color: white;" [text]=""></Label>
         <ScrollView row="2" orientation="horizontal">
                 <StackLayout #footer orientation="horizontal" horizontalAlignment="center">
@@ -9,7 +9,7 @@
                                         <Image row="0" col="0"
                                                 class="thumb-photo"
                                                 [src]="photo.file"
-                                                (tap)="show(photo.file)"
+                                                (tap)="show(i)"
                                                 stretch="aspectFill"
                                                 height="{{hpx + 'px'}}"
                                                 >
