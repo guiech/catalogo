@@ -1,6 +1,10 @@
 <ActionBar [title]="shoe.line + ' ' + shoe.name"></ActionBar>
 <GridLayout rows="*, auto, auto">
-        <Image row="0" class="main-photo" [src]="getCurrentPhoto()" stretch="aspectFit" height="100%" (swipe)="onSwipe($event)"></Image>
+        <AbsoluteLayout row="0" orientation="horizontal">
+                <ng-template ngFor let-i="index" let-photo [ngForOf]="shoe.photos">
+                        <Image #dragImage left="0" top="0" class="main-photo" [src]="photo.file" stretch="aspectFit" width="100%" height="100%" (pan)="onPan($event)"></Image>
+                </ng-template>
+        </AbsoluteLayout>
         <Label row="1" style="width:100%; height: 5px; background-color: white;" [text]=""></Label>
         <ScrollView row="2" orientation="horizontal">
                 <StackLayout #footer orientation="horizontal" horizontalAlignment="center">

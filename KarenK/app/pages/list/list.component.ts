@@ -27,6 +27,8 @@ export class ListComponent implements OnInit {
     goToShoe(id:number) : void {
         Device.height = this.page.getMeasuredHeight();
         Device.width = this.page.getMeasuredWidth();
+        Device.actualHeight = this.page.getActualSize().height;
+        Device.actualWidth = this.page.getActualSize().width;
         this.router.navigate(['/shoe', id]);
 
     }

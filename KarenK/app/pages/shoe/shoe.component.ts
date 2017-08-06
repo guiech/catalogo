@@ -1,13 +1,15 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef} from "@angular/core";
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, ViewChildren, ElementRef, QueryList, AfterViewInit} from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Page } from "ui/page";
-import { SwipeDirection, SwipeGestureEventData } from "ui/gestures";
+import { Image } from "ui/image";
+import { SwipeDirection, SwipeGestureEventData, PanGestureEventData } from "ui/gestures";
 
 import { Shoe } from "../../shared/shoes/shoe";
 import { ShoeService } from "../../shared/shoes/shoes.service";
 import { Device } from "../../shared/device";
 
 import * as _application from 'application';
+import animationModule = require("ui/animation");
 
 @Component({
     selector: "cg-item-page",
@@ -17,10 +19,13 @@ import * as _application from 'application';
     styleUrls: ['./shoe-common.css']
 })
 export class ShoeComponent implements OnInit {
-   private shoe: Shoe;
-   private currentPhotoIndex: number;
-   private photos:number;
-   private hpx:number;
+    private shoe: Shoe;
+    private currentPhotoIndex: number;
+    private hpx:number;
+    
+    @ViewChildren("dragImage") dragImages: QueryList<ElementRef>;
+    prevDeltaX: number;
+    prevDeltaY: number;
 
     constructor(private shoeService: ShoeService,
                 private route: ActivatedRoute,
@@ -35,7 +40,11 @@ export class ShoeComponent implements OnInit {
         const id = this.route.snapshot.params["id"];
         this.shoe = this.shoeService.getShoe(id);
         this.currentPhotoIndex = 0;
-        this.photos = this.shoe.photos.length;
+    }
+
+    ngAfterViewInit(): void {
+        let i = 0;
+        this.dragImages.forEach(el => el.nativeElement.translateX = Device.actualWidth * (i++))
     }
 
     ngOnDestroy() {
@@ -44,10 +53,29 @@ export class ShoeComponent implements OnInit {
     
     show(index: number) {
         this.currentPhotoIndex = index;
+        this.move(this.currentPhotoIndex, 1000);
+        console.log("v1");
     }
 
-    getCurrentPhoto() {
-        return this.shoe.photos[this.currentPhotoIndex].file;
+    move(index: number, milliseconds: number) {
+        let definitions = new Array<animationModule.AnimationDefinition>();
+        let i = 0;
+        this.dragImages.forEach(item => {
+            definitions.push({
+                target: item.nativeElement,
+                translate: {x: (i - index) * Device.actualWidth, y: 0},
+                duration: milliseconds
+            });
+            i++;
+        });
+        var animationSet = new animationModule.Animation(definitions);
+
+        animationSet.play().then(() => {
+            // Animation finished
+        })
+        .catch((e) => {
+            console.log(e.message);
+        });
     }
 
     setOrientation(args: _application.OrientationChangedEventData) {
@@ -61,20 +89,26 @@ export class ShoeComponent implements OnInit {
         this.hpx = Math.round(Device.height * 10 / 100);
     }
 
-    onSwipe(args: SwipeGestureEventData) {
-        switch(args.direction) {
-            case SwipeDirection.left:
-                if(this.currentPhotoIndex < (this.photos - 1)) {
+    onPan(args: PanGestureEventData) {
+        if (args.state === 1) {
+            this.prevDeltaX = 0;
+            this.prevDeltaY = 0;
+        } else if (args.state === 2) {
+            this.dragImages.forEach(el => el.nativeElement.translateX += args.deltaX - this.prevDeltaX);
+            this.prevDeltaX = args.deltaX;
+        } else if (args.state === 3) {
+            if(args.deltaX < 0 && args.deltaX < Device.actualWidth / -3) {
+                // go right
+                if(this.currentPhotoIndex < (this.shoe.photos.length-1)) {
                     this.currentPhotoIndex++;
                 }
-                break;
-            case SwipeDirection.right:
+            } else if(args.deltaX > 0 && args.deltaX > (Device.actualWidth / 3)) {
+                // go left
                 if(this.currentPhotoIndex > 0) {
                     this.currentPhotoIndex--;
                 }
-                break;
-            default:
-                break;
+            }
+            this.move(this.currentPhotoIndex, 500);
         }
     }
 }
